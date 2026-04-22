@@ -1,0 +1,183 @@
+{
+  "club": {
+    "nombre": "Club de Leones San Rosendo",
+    "numero_club": "181200",
+    "distrito": "Distrito T-3",
+    "lema": "Nosotros Servimos",
+    "correo": "club.leones.sanrosendo@gmail.com",
+    "whatsapp": "+56996945249",
+    "ciudad": "San Rosendo, Región del Biobío, Chile",
+    "fundacion": "3 de marzo de 2025",
+    "descripcion_corta": "Somos un club de servicio comunitario fundado el 3 de marzo de 2025, parte de Lions Clubs International Distrito T-3. En nuestro primer año hemos beneficiado a más de 1.293 personas.",
+    "mensaje_principal": "Construimos comunidad, confianza y futuro.",
+    "submensaje": "Somos el Club de Leones San Rosendo, fundados el 3 de marzo de 2025 y parte del Distrito T-3 de Lions Clubs International. En nuestro primer año ya hemos beneficiado a más de 1.293 personas con servicios concretos en nuestra comunidad."
+  },
+  "quienes_somos": {
+    "historia": "El Club de Leones San Rosendo fue constituido el 3 de marzo de 2025 (N° de club 181200), obteniendo ese mismo año su personalidad jurídica y consolidando su compromiso formal con la comunidad de San Rosendo, en la Región del Biobío. Actualmente nos encontramos en nuestro primer año leonístico de consolidación institucional (2025–2026), trabajando activamente bajo el liderazgo de su directiva y en coordinación con el Distrito T-3, alineados con los principios y protocolos del leonismo internacional. El 7 de marzo de 2026 celebramos un hito histórico: la entrega de nuestra Carta Constitutiva, el juramento de nuevos socios y la celebración de nuestro primer aniversario, en la Sede de la Sociedad de Ferroviarios Jubilados y Montepiados de San Rosendo. Este evento marcó el paso de club en formación a institución consolidada, con 19 socios activos comprometidos con el servicio.",
+    "lions_internacional": "Lions Clubs International es la organización de clubes de servicio más grande del mundo, con más de 1,4 millones de socios distribuidos en 48.000 clubes que sirven a 200 países y áreas geográficas de todo el mundo. Fundada en 1917 con el lema 'Nosotros Servimos', su misión es demostrar que donde hay necesidad, hay un León. La Fundación Lions Clubs International (LCIF) ha concedido más de 1.100 millones de dólares para financiar proyectos humanitarios a nivel mundial.",
+    "mision": "Desarrollar servicios comunitarios concretos que mejoren la calidad de vida de las personas en San Rosendo y su entorno, promoviendo el apoyo social directo, la prevención en salud, el trabajo colaborativo con la comunidad y la formación de una cultura de servicio.",
+    "vision": "Ser el referente de servicio y cohesión comunitaria en San Rosendo, reconocido por la confianza de sus habitantes, la calidad de su trabajo y su capacidad de generar impacto real y sostenible en la Región del Biobío.",
+    "valores": [
+      { "titulo": "Servicio", "descripcion": "Actuamos sin esperar nada a cambio. El servicio es nuestra razón de ser y la base de cada decisión que tomamos." },
+      { "titulo": "Compromiso", "descripcion": "Cumplimos lo que prometemos. Cada tarea importa y cada persona que servimos merece lo mejor de nosotros." },
+      { "titulo": "Solidaridad", "descripcion": "Nadie está solo cuando la comunidad se organiza. Respondemos juntos ante las necesidades de nuestra gente." },
+      { "titulo": "Transparencia", "descripcion": "Gestionamos con honestidad y rendimos cuentas. La confianza de la comunidad es nuestro activo más valioso." },
+      { "titulo": "Comunidad", "descripcion": "San Rosendo nos define. Servimos porque somos parte de aquí, y queremos que sea un lugar mejor para todos." }
+    ]
+  },
+  "directiva": [
+    { "cargo": "Presidente", "nombre": "Óscar Pino Echeverría", "email": "oscar.pinoe@cmpc.com" },
+    { "cargo": "Vicepresidente", "nombre": "Manuel Vélez", "email": "manuel.v.urtubia@gmail.com" },
+    { "cargo": "Secretario", "nombre": "Oswin Hemmelmann Parra", "email": "oswin69@msn.com" },
+    { "cargo": "Tesorero", "nombre": "Francisco Arratia Cuevas", "email": "francisco.javier.arratia@gmail.com" },
+    { "cargo": "Asesor GST (Servicios)", "nombre": "Ricardo Rosales Garcés", "email": "ricardorosalesg@gmail.com" },
+    { "cargo": "Asesor GMT (Membresía)", "nombre": "Mario Ríos", "email": "marioriosm@gmail.com" },
+    { "cargo": "Asesor de Mercadotecnia", "nombre": "Rodrigo Burgos Cayuán", "email": "rodrigo.burgos.cayuan@gmail.com" },
+    { "cargo": "Domador", "nombre": "Rolando Burgos Melo", "email": "rolandoburgos@gmail.com" },
+    { "cargo": "Director", "nombre": "Wladimir Urra Inostroza", "email": "urrawladimir@gmail.com" },
+    { "cargo": "León Orientador", "nombre": "Leonardo Arroyo Beltrán", "email": "leoarroyoleones@gmail.com" }
+  ],
+  "socios": [
+    { "nombre": "Arratia Cuevas, Francisco", "tipo": "Socio Fundador" },
+    { "nombre": "Bahamondes Gallegos, Héctor Patricio", "tipo": "Socio Fundador" },
+    { "nombre": "Burgos Cayuán, Rodrigo", "tipo": "Socio Fundador" },
+    { "nombre": "Burgos Melo, Rolando", "tipo": "Socio Fundador" },
+    { "nombre": "Hemmelmann Parra, Oswin", "tipo": "Socio Fundador" },
+    { "nombre": "Jara Silva, José", "tipo": "Socio Fundador" },
+    { "nombre": "Leiva Conejeros, Pedro", "tipo": "Socio Fundador" },
+    { "nombre": "Luna Ferrada, Jaime Alexis", "tipo": "Socio Regular" },
+    { "nombre": "Martínez, Branco", "tipo": "Socio Fundador" },
+    { "nombre": "Moreira Henríquez, Ricardo", "tipo": "Socio Reincorporado" },
+    { "nombre": "Oporto Torres, Efraín", "tipo": "Socio Fundador" },
+    { "nombre": "Pino Echeverría, Juan José", "tipo": "Socio Fundador" },
+    { "nombre": "Pino Echeverría, Óscar", "tipo": "Socio Fundador" },
+    { "nombre": "Pino Muñoz, Juan", "tipo": "Socio Fundador" },
+    { "nombre": "Quintana Inostroza, Roberto Elías", "tipo": "Socio Regular" },
+    { "nombre": "Ríos, Mario", "tipo": "Socio Fundador" },
+    { "nombre": "Rosales Garcés, Ricardo", "tipo": "Socio Fundador" },
+    { "nombre": "Urra Inostroza, Wladimir", "tipo": "Socio Fundador" },
+    { "nombre": "Vélez, Manuel", "tipo": "Socio Fundador" }
+  ],
+  "servicios": [
+    {
+      "id": 1,
+      "titulo": "Operativos de Salud Comunitaria",
+      "icono": "🩺",
+      "descripcion": "Realizamos controles de presión arterial, glicemia y otras atenciones preventivas en terreno, llevando salud gratuita directamente a quienes más lo necesitan.",
+      "detalle": "Hemos ejecutado operativos en la Sede de Jubilados de San Rosendo y la Plaza de Armas, incluyendo servicios de mamografías. En Laja realizamos un multiservicio con +53 atenciones, 9 profesionales de salud y apoyo de transporte municipal."
+    },
+    {
+      "id": 2,
+      "titulo": "Multiservicio en Terreno",
+      "icono": "🏥",
+      "descripcion": "Coordinamos operativos de amplio alcance con equipos multidisciplinarios, centros médicos y apoyo logístico municipal para ampliar cobertura en zonas con menor acceso.",
+      "detalle": "El multiservicio realizado en Laja es un ejemplo de nuestra capacidad de coordinación: +53 atenciones, participación de más de 9 profesionales de la salud y transporte urbano y rural coordinado con el municipio."
+    },
+    {
+      "id": 3,
+      "titulo": "Campañas Sociales",
+      "icono": "🤝",
+      "descripcion": "Organizamos campañas de apoyo directo a los sectores más vulnerables de la comunidad, con foco en impacto real y sostenible.",
+      "detalle": "Respondemos con rapidez y organización ante las necesidades de nuestra comunidad, desde apoyo en situaciones de emergencia hasta actividades culturales y cívicas."
+    },
+    {
+      "id": 4,
+      "titulo": "Autofinanciamiento Solidario",
+      "icono": "🎟️",
+      "descripcion": "Organizamos rifas y actividades de financiamiento propio para sostener nuestras labores comunitarias con independencia y transparencia.",
+      "detalle": "Hemos gestionado más de 15 rifas en nuestro primer año leonístico, con control transparente de premios y resultados. Este modelo autosostenible financia directamente los servicios a la comunidad."
+    }
+  ],
+  "actividades": [
+    {
+      "id": 1,
+      "titulo": "Multiservicio de Salud en Laja",
+      "fecha": "2025",
+      "lugar": "Laja, Región del Biobío",
+      "descripcion": "+53 atenciones realizadas en coordinación con centro médico. Participación de 9 profesionales de la salud y apoyo logístico municipal con transporte urbano y rural.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "salud"
+    },
+    {
+      "id": 2,
+      "titulo": "Operativo de Salud – Sede Jubilados",
+      "fecha": "2025",
+      "lugar": "Sede Sociedad de Jubilados, San Rosendo",
+      "descripcion": "Control de presión arterial y glicemia gratuito para la comunidad en la Sede de la Sociedad de Jubilados de San Rosendo.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "salud"
+    },
+    {
+      "id": 3,
+      "titulo": "Operativo de Salud con Mamografías – Plaza de Armas",
+      "fecha": "2025",
+      "lugar": "Plaza de Armas, San Rosendo",
+      "descripcion": "Operativo de salud preventiva en Plaza de Armas con servicio de mamografías abierto a la comunidad.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "salud"
+    },
+    {
+      "id": 4,
+      "titulo": "Ceremonia: Carta Constitutiva y 1er Aniversario",
+      "fecha": "7 de marzo de 2026",
+      "lugar": "Sede Sociedad de Ferroviarios Jubilados y Montepiados, San Rosendo",
+      "descripcion": "Evento institucional con entrega de Carta Constitutiva, juramento de nuevos socios y celebración del primer aniversario del club, con protocolo leonístico completo.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "institucional"
+    },
+    {
+      "id": 5,
+      "titulo": "Rifas Solidarias de Autofinanciamiento",
+      "fecha": "2025–2026",
+      "lugar": "San Rosendo",
+      "descripcion": "Organización de más de 15 rifas para financiar actividades comunitarias, con gestión transparente de premios, sorteos y rendición de resultados.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "financiamiento"
+    }
+  ],
+  "proximas_actividades": [
+    {
+      "id": 1,
+      "titulo": "[COMPLETAR PRÓXIMA ACTIVIDAD]",
+      "fecha": "[COMPLETAR FECHA]",
+      "lugar": "[COMPLETAR LUGAR]",
+      "estado": "programado"
+    }
+  ],
+  "gestion": {
+    "anio": "2025–2026",
+    "socios_activos": "19",
+    "servicios_realizados": "+3",
+    "personas_beneficiadas": "1.293",
+    "actividades_anuales": "+15",
+    "resumen": "El Club de Leones San Rosendo, constituido el 3 de marzo de 2025 (N° 181200), culmina su primer año leonístico con resultados concretos y una base institucional sólida. Con 19 socios activos —16 fundadores, 2 regulares y 1 reincorporado— el club realizó más de 3 operativos de salud beneficiando a 1.293 personas, gestionó más de 15 rifas de autofinanciamiento, y celebró la Ceremonia de Carta Constitutiva el 7 de marzo de 2026. Los fondos gestionados alcanzaron $1.550 donados y $1.090 recaudados.",
+    "proyeccion": "Para el período 2026–2027, el club proyecta expandir la cobertura de sus operativos de salud, consolidar alianzas con el CESFAM local y organizaciones municipales, aumentar el número de socios activos y explorar el acceso a fondos de la Lions Clubs International Foundation (LCIF) para iniciativas de mayor impacto regional.",
+    "actividades_clave": [
+      "Constitución formal del club el 3 de marzo de 2025 (N° 181200)",
+      "Multiservicio de salud en Laja: +53 atenciones con 9 profesionales",
+      "Operativo con mamografías en Plaza de Armas de San Rosendo",
+      "Ceremonia de Carta Constitutiva y 1er Aniversario (7 marzo 2026)",
+      "Más de 15 rifas solidarias para autofinanciamiento comunitario"
+    ]
+  },
+  "donaciones": {
+    "banco": "BancoEstado",
+    "tipo_cuenta": "Cuenta Vista",
+    "numero_cuenta": "54970273886",
+    "rut": "65.257.884-5",
+    "nombre_titular": "Club De Leones San Rosendo",
+    "responsable": "Francisco Arratia Cuevas (Tesorero)",
+    "texto_confianza": "El Club de Leones San Rosendo es una organización sin fines de lucro con personalidad jurídica vigente desde 2025 (N° de club 181200), parte de Lions Clubs International Distrito T-3. Todos los aportes recibidos son gestionados con total transparencia por nuestro Tesorero y destinados exclusivamente a financiar actividades comunitarias. Rendimos cuentas a nuestros socios, al Distrito T-3 y a la comunidad. Ante cualquier consulta escribanos a club.leones.sanrosendo@gmail.com."
+  },
+  "galeria_categorias": [
+    { "id": "salud", "nombre": "Operativos de Salud" },
+    { "id": "social", "nombre": "Campañas Sociales" },
+    { "id": "institucional", "nombre": "Actos Institucionales" },
+    { "id": "comunidad", "nombre": "Vida Comunitaria" }
+  ]
+}
