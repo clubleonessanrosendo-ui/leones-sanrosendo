@@ -292,16 +292,33 @@ function initPestanas() {
 
 // --- GALERÍA ---
 function renderGaleria(data) {
-  // Mostrar aviso de que la galería espera imágenes reales
   const contenedor = document.getElementById('galeria-contenedor');
   if (!contenedor) return;
-  contenedor.innerHTML = `
-    <div class="galeria-aviso">
-      <div class="galeria-aviso-titulo">📷 Galería en construcción</div>
-      <p>Para agregar imágenes, coloca los archivos en la carpeta <strong>img/galeria/</strong> y actualiza el archivo <strong>data/galeria.json</strong> con los nombres y categorías de cada imagen.</p>
-      <p style="margin-top: 12px;">Ver el archivo <strong>README.md</strong> para instrucciones detalladas.</p>
-    </div>
-  `;
+
+  fetch('data/galeria.json')
+    .then(r => r.json())
+    .then(imagenes => {
+      if (!imagenes || imagenes.length === 0) {
+        contenedor.innerHTML = `
+          <div class="galeria-aviso">
+            <div class="galeria-aviso-titulo">📷 Galería en construcción</div>
+            <p>Agrega imágenes en <strong>img/galeria/</strong> y actualiza <strong>data/galeria.json</strong></p>
+          </div>`;
+        return;
+      }
+      contenedor.innerHTML = `
+        <div class="galeria-grid">
+          ${imagenes.map(img => `
+            <div class="galeria-item" style="opacity:1;">
+              <img src="${img.archivo}" alt="${img.titulo}" style="width:100%;height:100%;object-fit:cover;">
+              <div class="galeria-placeholder-texto">${img.titulo}</div>
+            </div>
+          `).join('')}
+        </div>`;
+    })
+    .catch(() => {
+      contenedor.innerHTML = `<div class="galeria-aviso"><p>No se pudieron cargar las imágenes.</p></div>`;
+    });
 }
 
 // --- ANIMACIONES SCROLL ---
