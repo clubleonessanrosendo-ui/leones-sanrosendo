@@ -8,3 +8,15 @@
     "fecha": "[COMPLETAR FECHA]"
   }
 ]
+,
+{
+  "id": 2,
+  "titulo": "1er Aniversario del Club de Leones San Rosendo",
+  "fecha": "3 de marzo de 2026",
+  "lugar": "Sede Sociedad de Jubilados, San Rosendo",
+  "descripcion": "Resumen de los servicios y actividades desarrolladas durante el primer año leonístico 2025–2026.",
+  "estado": "realizado",
+  "imagen": "",
+  "video": "https://www.youtube.com/embed/ECgreqP_tas",
+  "categoria": "institucional"
+}
