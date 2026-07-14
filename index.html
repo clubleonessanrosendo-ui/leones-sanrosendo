@@ -12,6 +12,95 @@
   <meta name="theme-color" content="#003087">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
   <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- =========================================================
+       ESTILOS SECCIÓN "NUESTRA HISTORIA" (autocontenidos)
+       No dependen de css/estilos.css. Si se elimina este bloque,
+       el resto del sitio no se ve afectado.
+       ========================================================= -->
+  <style>
+    .historia-wrap{margin-top:64px;padding-top:48px;border-top:1px solid rgba(0,63,135,.12)}
+    .historia-toggle{display:inline-flex;align-items:center;gap:10px;background:transparent;
+      border:2px solid var(--azul,#003F87);color:var(--azul,#003F87);font-weight:600;
+      font-size:.95rem;padding:12px 24px;border-radius:999px;cursor:pointer;
+      transition:background .2s,color .2s}
+    .historia-toggle:hover{background:var(--azul,#003F87);color:#fff}
+    .historia-toggle .chev{transition:transform .25s;font-size:.75rem}
+    .historia-toggle[aria-expanded="true"] .chev{transform:rotate(180deg)}
+    .historia-panel{display:none;margin-top:40px}
+    .historia-panel.abierto{display:block}
+    .periodo{position:relative;padding-left:34px;padding-bottom:44px}
+    .periodo:last-child{padding-bottom:0}
+    .periodo::before{content:'';position:absolute;left:9px;top:26px;bottom:0;width:2px;
+      background:linear-gradient(180deg,var(--dorado,#F5A800),rgba(245,168,0,.15))}
+    .periodo:last-child::before{display:none}
+    .periodo::after{content:'';position:absolute;left:0;top:8px;width:20px;height:20px;
+      border-radius:50%;background:var(--dorado,#F5A800);
+      box-shadow:0 0 0 4px rgba(245,168,0,.18)}
+    .periodo-anio{font-family:var(--fuente-titulo,Georgia,serif);font-size:1.35rem;
+      color:var(--azul,#003F87);font-weight:700;line-height:1.2}
+    .periodo-titulo{display:inline-block;margin-top:6px;font-size:.72rem;font-weight:700;
+      letter-spacing:.08em;text-transform:uppercase;color:#8a6a12;
+      background:var(--dorado-suave,#FFF6E0);border:1px solid rgba(245,168,0,.45);
+      padding:4px 12px;border-radius:999px}
+    .periodo-presi{margin-top:14px;font-size:1rem;color:var(--gris-texto,#2d3748)}
+    .periodo-presi strong{color:var(--azul,#003F87)}
+    .periodo-desc{margin-top:12px;color:#4a5568;line-height:1.75;font-size:.97rem;max-width:820px}
+    .periodo-cargos{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px;
+      grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+    .periodo-cargos li{background:#fff;border:1px solid rgba(0,63,135,.10);border-left:3px solid var(--dorado,#F5A800);
+      border-radius:8px;padding:12px 16px}
+    .cargo-rol{display:block;font-size:.7rem;font-weight:700;letter-spacing:.06em;
+      text-transform:uppercase;color:#718096;margin-bottom:3px}
+    .cargo-nombre{display:block;font-weight:600;color:var(--azul,#003F87);font-size:.95rem}
+    .periodo-hitos{margin-top:24px;background:var(--gris-suave,#f6f8fb);border-radius:10px;padding:20px 22px}
+    .periodo-hitos h4{margin:0 0 12px;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;
+      color:var(--azul,#003F87)}
+    .periodo-hitos ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+    .periodo-hitos li{display:flex;gap:10px;color:#4a5568;font-size:.94rem;line-height:1.6}
+    .periodo-hitos li::before{content:'→';color:var(--dorado,#F5A800);font-weight:700;flex-shrink:0}
+    @media(max-width:640px){.periodo-cargos{grid-template-columns:1fr}}
+
+    /* ---------- GALERÍA ---------- */
+    .gal-filtros{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:32px}
+    .gal-chip{background:#fff;border:1.5px solid rgba(0,63,135,.18);color:var(--azul,#003F87);
+      font-weight:600;font-size:.85rem;padding:9px 18px;border-radius:999px;cursor:pointer;
+      transition:all .18s}
+    .gal-chip:hover{border-color:var(--dorado,#F5A800)}
+    .gal-chip.activo{background:var(--azul,#003F87);border-color:var(--azul,#003F87);color:#fff}
+    .gal-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+    .gal-item{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;
+      aspect-ratio:4/3;background:#e8edf3;border:1px solid rgba(0,63,135,.08);
+      transition:transform .22s,box-shadow .22s}
+    .gal-item:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,63,135,.18)}
+    .gal-item img{width:100%;height:100%;object-fit:cover;display:block}
+    .gal-cap{position:absolute;inset:auto 0 0 0;padding:26px 14px 12px;color:#fff;
+      background:linear-gradient(180deg,transparent,rgba(0,32,68,.88));
+      font-size:.88rem;font-weight:600;line-height:1.35}
+    .gal-cap small{display:block;font-weight:400;opacity:.85;font-size:.75rem;margin-top:2px}
+    .gal-vacio{text-align:center;color:#64748b;padding:36px 0;font-size:.95rem}
+    /* Lightbox */
+    .lb{position:fixed;inset:0;z-index:9999;background:rgba(4,18,38,.94);
+      display:none;align-items:center;justify-content:center;padding:24px}
+    .lb.abierto{display:flex}
+    .lb-fig{margin:0;max-width:1100px;width:100%;text-align:center}
+    .lb-fig img{max-width:100%;max-height:74vh;border-radius:10px;
+      box-shadow:0 24px 60px rgba(0,0,0,.55)}
+    .lb-cap{color:#fff;margin-top:18px}
+    .lb-cap b{display:block;font-size:1.1rem}
+    .lb-cap span{display:block;color:rgba(255,255,255,.72);font-size:.9rem;margin-top:5px}
+    .lb-x,.lb-nav{position:absolute;background:rgba(255,255,255,.12);border:none;color:#fff;
+      cursor:pointer;border-radius:50%;width:46px;height:46px;font-size:1.3rem;line-height:1;
+      display:flex;align-items:center;justify-content:center;transition:background .18s}
+    .lb-x:hover,.lb-nav:hover{background:rgba(245,168,0,.85)}
+    .lb-x{top:20px;right:22px}
+    .lb-prev{left:20px;top:50%;transform:translateY(-50%)}
+    .lb-next{right:20px;top:50%;transform:translateY(-50%)}
+    @media(max-width:640px){
+      .gal-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+      .lb-prev{left:8px}.lb-next{right:8px}
+    }
+  </style>
 </head>
 <body>
 
@@ -170,14 +259,15 @@
 
 
 <!-- ==========================================
-     DIRECTIVA Y SOCIOS
+     DIRECTIVA, SOCIOS E HISTORIA
      ========================================== -->
 <section class="seccion seccion-dorada" id="directiva" aria-labelledby="titulo-directiva">
   <div class="contenedor">
     <div class="centrado">
       <h2 class="titulo-seccion" id="titulo-directiva">Nuestra Directiva</h2>
       <div class="linea-decorativa"></div>
-      <p class="subtitulo-seccion">Año Leonístico 2026–2027 · Club N° 181200 · Distrito T-3</p>
+      <!-- CORRECCIÓN: período ahora dinámico desde data/contenido.json -->
+      <p class="subtitulo-seccion" id="directiva-subtitulo">Club N° 181200 · Distrito T-3 Chile Sur</p>
     </div>
 
     <div class="directiva-grid" id="directiva-grid">
@@ -185,15 +275,38 @@
     </div>
 
     <div class="centrado" style="margin-top: 48px;">
-      <h3 class="titulo-seccion" style="font-size: 1.4rem; margin-bottom: 8px;">Nuestros 19 Socios</h3>
+      <!-- CORRECCIÓN: conteo de socios dinámico -->
+      <h3 class="titulo-seccion" id="socios-titulo" style="font-size: 1.4rem; margin-bottom: 8px;">Nuestros Socios</h3>
       <div class="linea-decorativa"></div>
-      <p style="color:#64748b; margin: 16px auto 32px; max-width: 560px; font-size: 0.95rem;">
-        El Club de Leones San Rosendo está integrado por 16 socios fundadores, 2 socios regulares y 1 socio reincorporado.
+      <p id="socios-bajada" style="color:#64748b; margin: 16px auto 32px; max-width: 560px; font-size: 0.95rem;">
+        El Club de Leones San Rosendo está integrado por socias y socios comprometidos con el servicio a la comunidad.
       </p>
       <div class="socios-grid" id="socios-grid">
         <!-- Cargado desde JS -->
       </div>
     </div>
+
+    <!-- ==========================================
+         NUEVO · NUESTRA HISTORIA (directivas anteriores)
+         ========================================== -->
+    <div class="historia-wrap" id="historia-wrap" style="display:none;">
+      <div class="centrado">
+        <h3 class="titulo-seccion" style="font-size: 1.4rem; margin-bottom: 8px;">Nuestra Historia</h3>
+        <div class="linea-decorativa"></div>
+        <p style="color:#64748b; margin: 16px auto 26px; max-width: 620px; font-size: 0.95rem;">
+          Cada directiva deja huella. Este es el registro de quienes han conducido al Club de Leones San Rosendo.
+        </p>
+        <button class="historia-toggle" id="historia-toggle" aria-expanded="false" aria-controls="historia-panel">
+          <span id="historia-toggle-txt">Ver directivas anteriores</span>
+          <span class="chev" aria-hidden="true">▼</span>
+        </button>
+      </div>
+
+      <div class="historia-panel" id="historia-panel">
+        <!-- Cargado desde JS (script al pie de esta página) -->
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -243,17 +356,15 @@
       <!-- Cargado desde JS -->
     </div>
 
-    <div class="centrado" style="margin-top: 36px;">
-      <p style="font-size: 0.9rem; color: #718096; margin-bottom: 16px;">
-        Para agregar nuevas actividades, edita el archivo <strong>data/contenido.json</strong> → sección "actividades"
-      </p>
-    </div>
+    <!-- CORRECCIÓN: eliminada la nota editorial "edita data/contenido.json"
+         que era visible para cualquier visitante del sitio. -->
   </div>
 </section>
 
 
 <!-- ==========================================
      PRÓXIMAS ACTIVIDADES
+     (se auto-oculta si no hay actividades programadas)
      ========================================== -->
 <section class="seccion seccion-dorada" id="proximas" aria-labelledby="titulo-proximas">
   <div class="contenedor">
@@ -281,11 +392,26 @@
       <p class="subtitulo-seccion">Momentos que reflejan nuestro trabajo y presencia comunitaria.</p>
     </div>
 
+    <div class="gal-filtros" id="gal-filtros"><!-- JS --></div>
     <div id="galeria-contenedor">
-      <!-- Cargado desde JS -->
+      <div class="gal-grid" id="gal-grid"><!-- JS --></div>
     </div>
   </div>
 </section>
+
+<!-- Lightbox de la galería -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Vista ampliada de la fotografía">
+  <button class="lb-x" id="lb-x" aria-label="Cerrar">✕</button>
+  <button class="lb-nav lb-prev" id="lb-prev" aria-label="Foto anterior">‹</button>
+  <button class="lb-nav lb-next" id="lb-next" aria-label="Foto siguiente">›</button>
+  <figure class="lb-fig">
+    <img id="lb-img" src="" alt="">
+    <figcaption class="lb-cap">
+      <b id="lb-tit"></b>
+      <span id="lb-desc"></span>
+    </figcaption>
+  </figure>
+</div>
 
 
 <!-- ==========================================
@@ -674,7 +800,7 @@
           <li><a href="#quienes-somos">Quiénes Somos</a></li>
           <li><a href="#nuestra-labor">Nuestra Labor</a></li>
           <li><a href="#actividades">Actividades</a></li>
-          <li><a href="#proximas">Próximas Actividades</a></li>
+          <li><a href="#directiva">Nuestra Historia</a></li>
           <li><a href="#galeria">Galería</a></li>
         </ul>
       </div>
@@ -752,6 +878,279 @@ document.addEventListener('DOMContentLoaded', () => {
     if (personas && heroPersonas) heroPersonas.innerHTML = personas.innerHTML;
   }, 400);
 });
+</script>
+
+
+<!-- =========================================================
+     MÓDULO COMPLEMENTARIO · Club de Leones San Rosendo
+     1. Subtítulo dinámico del período de la directiva
+     2. Conteo dinámico de socios
+     3. Sección "Nuestra Historia" (directivas anteriores)
+     4. Auto-ocultar "Próximas Actividades" si está vacía
+
+     Es independiente de js/main.js. Lee data/contenido.json
+     por su cuenta. Si falla, no afecta al resto del sitio.
+     ========================================================= -->
+<script>
+(function () {
+  'use strict';
+
+  const esc = (s) => String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+  fetch('data/contenido.json', { cache: 'no-store' })
+    .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then((d) => {
+      /* ---------- 1. Subtítulo del período de la directiva ---------- */
+      const sub = document.getElementById('directiva-subtitulo');
+      if (sub) {
+        const p = d.directiva_periodo || {};
+        const partes = [];
+        if (p.periodo) partes.push('Año Leonístico ' + p.periodo);
+        if (d.club && d.club.numero_club) partes.push('Club N° ' + d.club.numero_club);
+        if (d.club && d.club.distrito) partes.push(d.club.distrito);
+        if (partes.length) sub.textContent = partes.join(' · ');
+      }
+
+      /* ---------- 2. Conteo dinámico de socios ---------- */
+      const socios = Array.isArray(d.socios) ? d.socios : [];
+      if (socios.length) {
+        const tit = document.getElementById('socios-titulo');
+        if (tit) tit.textContent = 'Nuestros ' + socios.length + ' Socios';
+
+        const conteo = socios.reduce((acc, s) => {
+          const t = (s.tipo || 'Socio').trim();
+          acc[t] = (acc[t] || 0) + 1;
+          return acc;
+        }, {});
+        const detalle = Object.keys(conteo)
+          .sort((a, b) => conteo[b] - conteo[a])
+          .map((t) => {
+            const n = conteo[t];
+            const etiqueta = n === 1 ? t.toLowerCase() : t.toLowerCase() + 'es';
+            return n + ' ' + etiqueta.replace('socioes', 'socios');
+          })
+          .join(', ');
+
+        const baj = document.getElementById('socios-bajada');
+        if (baj) {
+          baj.textContent = 'El Club de Leones San Rosendo está integrado por ' +
+            socios.length + ' socias y socios activos (' + detalle + ').';
+        }
+      }
+
+      /* ---------- 3. Nuestra Historia: directivas anteriores ---------- */
+      const historicas = Array.isArray(d.directivas_historicas) ? d.directivas_historicas : [];
+      const wrap = document.getElementById('historia-wrap');
+      const panel = document.getElementById('historia-panel');
+      const btn = document.getElementById('historia-toggle');
+      const btnTxt = document.getElementById('historia-toggle-txt');
+
+      if (wrap && panel && btn && historicas.length) {
+        panel.innerHTML = historicas.map((p) => {
+          const cargos = Array.isArray(p.miembros) ? p.miembros : [];
+          const hitos = Array.isArray(p.hitos) ? p.hitos : [];
+
+          const cargosHTML = cargos.length ? (
+            '<ul class="periodo-cargos">' + cargos.map((m) =>
+              '<li><span class="cargo-rol">' + esc(m.cargo) + '</span>' +
+              '<span class="cargo-nombre">' + esc(m.nombre) + '</span></li>'
+            ).join('') + '</ul>'
+          ) : '';
+
+          const hitosHTML = hitos.length ? (
+            '<div class="periodo-hitos"><h4>Hitos del período</h4><ul>' +
+            hitos.map((h) => '<li>' + esc(h) + '</li>').join('') +
+            '</ul></div>'
+          ) : '';
+
+          return '<article class="periodo">' +
+            '<div class="periodo-anio">' + esc(p.periodo) + '</div>' +
+            (p.titulo ? '<span class="periodo-titulo">' + esc(p.titulo) + '</span>' : '') +
+            (p.presidente ? '<div class="periodo-presi">Presidente: <strong>' + esc(p.presidente) + '</strong></div>' : '') +
+            (p.descripcion ? '<p class="periodo-desc">' + esc(p.descripcion) + '</p>' : '') +
+            cargosHTML + hitosHTML +
+            '</article>';
+        }).join('');
+
+        wrap.style.display = '';
+
+        btn.addEventListener('click', () => {
+          const abierto = panel.classList.toggle('abierto');
+          btn.setAttribute('aria-expanded', String(abierto));
+          if (btnTxt) {
+            btnTxt.textContent = abierto ? 'Ocultar directivas anteriores' : 'Ver directivas anteriores';
+          }
+        });
+      }
+
+      /* ---------- 4. Auto-ocultar "Próximas Actividades" si está vacía ---------- */
+      const proximas = Array.isArray(d.proximas_actividades) ? d.proximas_actividades : [];
+      const secProx = document.getElementById('proximas');
+      if (secProx && proximas.length === 0) {
+        secProx.style.display = 'none';
+        document.querySelectorAll('a[href="#proximas"]').forEach((a) => {
+          const li = a.closest('li');
+          (li || a).style.display = 'none';
+        });
+      }
+    })
+      /* ---------- 5. GALERÍA (lee data/galeria.json) ---------- */
+      iniciarGaleria(Array.isArray(d.galeria_categorias) ? d.galeria_categorias : []);
+    })
+    .catch((err) => {
+      console.warn('[Módulo complementario] No se pudo cargar data/contenido.json:', err);
+      iniciarGaleria([]);
+    });
+
+
+  /* =========================================================
+     GALERÍA · grid + filtros + lightbox
+     Fuente de datos: data/galeria.json
+     Tolerante a errores: fotos que no existan se ocultan solas.
+     ========================================================= */
+  function iniciarGaleria(categorias) {
+    const secGal   = document.getElementById('galeria');
+    const grid     = document.getElementById('gal-grid');
+    const filtros  = document.getElementById('gal-filtros');
+    if (!secGal || !grid) return;
+
+    fetch('data/galeria.json', { cache: 'no-store' })
+      .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then((raw) => {
+        // Solo aceptamos registros con archivo declarado
+        const fotos = (Array.isArray(raw) ? raw : [])
+          .filter((f) => f && typeof f.archivo === 'string' && f.archivo.trim())
+          .map((f, i) => {
+            // Si falta la categoría, se infiere del prefijo del nombre de archivo
+            let cat = (f.categoria || '').trim().toLowerCase();
+            if (!cat) {
+              const base = f.archivo.split('/').pop() || '';
+              cat = (base.split('-')[0] || '').toLowerCase();
+            }
+            return {
+              i,
+              archivo: f.archivo.trim(),
+              titulo: (f.titulo || '').trim(),
+              descripcion: (f.descripcion || '').trim(),
+              fecha: (f.fecha || '').trim(),
+              categoria: cat
+            };
+          })
+          // Nunca mostrar textos de relleno en producción
+          .filter((f) => !/\[COMPLETAR/i.test(f.titulo + f.descripcion + f.fecha));
+
+        if (!fotos.length) { secGal.style.display = 'none'; return; }
+
+        /* --- Chips de filtro: solo categorías que tienen fotos --- */
+        const presentes = new Set(fotos.map((f) => f.categoria));
+        const nombres = {};
+        categorias.forEach((c) => { if (c && c.id) nombres[c.id] = c.nombre || c.id; });
+
+        const chips = [{ id: 'todos', nombre: 'Todas' }].concat(
+          Array.from(presentes).map((id) => ({ id, nombre: nombres[id] || id }))
+        );
+
+        if (filtros) {
+          filtros.innerHTML = chips.map((c, k) =>
+            '<button class="gal-chip' + (k === 0 ? ' activo' : '') +
+            '" data-cat="' + esc(c.id) + '">' + esc(c.nombre) + '</button>'
+          ).join('');
+        }
+
+        /* --- Pintar el grid --- */
+        let visibles = fotos;
+
+        function pintar(cat) {
+          visibles = (cat === 'todos') ? fotos : fotos.filter((f) => f.categoria === cat);
+          if (!visibles.length) {
+            grid.innerHTML = '<p class="gal-vacio">Aún no hay fotografías en esta categoría.</p>';
+            return;
+          }
+          grid.innerHTML = visibles.map((f, k) => {
+            const alt = f.titulo || 'Fotografía del Club de Leones San Rosendo';
+            const pie = f.titulo
+              ? '<div class="gal-cap">' + esc(f.titulo) +
+                (f.fecha ? '<small>' + esc(f.fecha) + '</small>' : '') + '</div>'
+              : '';
+            return '<figure class="gal-item" data-k="' + k + '" role="button" tabindex="0" ' +
+              'aria-label="Ampliar: ' + esc(alt) + '">' +
+              '<img src="' + esc(f.archivo) + '" alt="' + esc(alt) + '" loading="lazy" ' +
+              'onerror="this.closest(\'.gal-item\').style.display=\'none\'">' +
+              pie + '</figure>';
+          }).join('');
+        }
+
+        pintar('todos');
+
+        if (filtros) {
+          filtros.addEventListener('click', (e) => {
+            const b = e.target.closest('.gal-chip');
+            if (!b) return;
+            filtros.querySelectorAll('.gal-chip').forEach((x) => x.classList.remove('activo'));
+            b.classList.add('activo');
+            pintar(b.dataset.cat);
+          });
+        }
+
+        /* --- Lightbox --- */
+        const lb = document.getElementById('lb');
+        const lbImg = document.getElementById('lb-img');
+        const lbTit = document.getElementById('lb-tit');
+        const lbDesc = document.getElementById('lb-desc');
+        if (!lb) return;
+
+        let idx = 0;
+
+        function abrir(k) {
+          const f = visibles[k];
+          if (!f) return;
+          idx = k;
+          lbImg.src = f.archivo;
+          lbImg.alt = f.titulo || 'Fotografía del Club de Leones San Rosendo';
+          lbTit.textContent = f.titulo || '';
+          lbDesc.textContent = [f.descripcion, f.fecha].filter(Boolean).join(' · ');
+          lb.classList.add('abierto');
+          document.body.style.overflow = 'hidden';
+        }
+        function cerrar() {
+          lb.classList.remove('abierto');
+          document.body.style.overflow = '';
+          lbImg.src = '';
+        }
+        function mover(paso) {
+          if (!visibles.length) return;
+          abrir((idx + paso + visibles.length) % visibles.length);
+        }
+
+        grid.addEventListener('click', (e) => {
+          const it = e.target.closest('.gal-item');
+          if (it) abrir(Number(it.dataset.k));
+        });
+        grid.addEventListener('keydown', (e) => {
+          if (e.key !== 'Enter' && e.key !== ' ') return;
+          const it = e.target.closest('.gal-item');
+          if (it) { e.preventDefault(); abrir(Number(it.dataset.k)); }
+        });
+
+        document.getElementById('lb-x').addEventListener('click', cerrar);
+        document.getElementById('lb-prev').addEventListener('click', () => mover(-1));
+        document.getElementById('lb-next').addEventListener('click', () => mover(1));
+        lb.addEventListener('click', (e) => { if (e.target === lb) cerrar(); });
+        document.addEventListener('keydown', (e) => {
+          if (!lb.classList.contains('abierto')) return;
+          if (e.key === 'Escape') cerrar();
+          if (e.key === 'ArrowLeft') mover(-1);
+          if (e.key === 'ArrowRight') mover(1);
+        });
+      })
+      .catch((err) => {
+        console.warn('[Galería] No se pudo cargar data/galeria.json:', err);
+        secGal.style.display = 'none';   // no dejar una sección vacía en público
+      });
+  }
+})();
 </script>
 
 </body>
