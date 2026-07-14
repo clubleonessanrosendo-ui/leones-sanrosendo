@@ -2,167 +2,407 @@
   "club": {
     "nombre": "Club de Leones San Rosendo",
     "numero_club": "181200",
-    "distrito": "Distrito T-3",
+    "distrito": "Distrito T-3 Chile Sur",
     "lema": "Nosotros Servimos",
     "correo": "club.leones.sanrosendo@gmail.com",
     "whatsapp": "+56996945249",
     "ciudad": "San Rosendo, Región del Biobío, Chile",
     "fundacion": "3 de marzo de 2025",
-    "descripcion_corta": "Somos un club de servicio comunitario fundado el 3 de marzo de 2025, parte de Lions Clubs International Distrito T-3. En nuestro primer año hemos beneficiado a más de 1.293 personas.",
+    "descripcion_corta": "Somos un club de servicio comunitario fundado el 3 de marzo de 2025, parte de Lions Clubs International Distrito T-3 Chile Sur. En nuestro primer año leonístico completo servimos a 2.386 personas de San Rosendo y sus alrededores.",
     "mensaje_principal": "Construimos comunidad, confianza y futuro.",
-    "submensaje": "Somos el Club de Leones San Rosendo, fundados el 3 de marzo de 2025 y parte del Distrito T-3 de Lions Clubs International. En nuestro primer año ya hemos beneficiado a más de 1.293 personas con servicios concretos en nuestra comunidad."
+    "submensaje": "Somos el Club de Leones San Rosendo, fundados el 3 de marzo de 2025 y parte del Distrito T-3 Chile Sur de Lions Clubs International. En nuestro primer año leonístico completo servimos a 2.386 personas, con 35 actividades reportadas y 156 horas de voluntariado."
   },
   "quienes_somos": {
-    "historia": "El Club de Leones San Rosendo fue constituido el 3 de marzo de 2025 (N° de club 181200), obteniendo ese mismo año su personalidad jurídica y consolidando su compromiso formal con la comunidad de San Rosendo, en la Región del Biobío. Actualmente nos encontramos en nuestro primer año leonístico de consolidación institucional (2025–2026), trabajando activamente bajo el liderazgo de su directiva y en coordinación con el Distrito T-3, alineados con los principios y protocolos del leonismo internacional. El 7 de marzo de 2026 celebramos un hito histórico: la entrega de nuestra Carta Constitutiva, el juramento de nuevos socios y la celebración de nuestro primer aniversario, en la Sede de la Sociedad de Ferroviarios Jubilados y Montepiados de San Rosendo. Este evento marcó el paso de club en formación a institución consolidada, con 19 socios activos comprometidos con el servicio.",
+    "historia": "El Club de Leones San Rosendo fue constituido el 3 de marzo de 2025 (N° de club 181200), obteniendo ese mismo año su personalidad jurídica y consolidando su compromiso formal con la comunidad de San Rosendo, en la Región del Biobío. El 7 de marzo de 2026 celebramos un hito histórico: la entrega de nuestra Carta Constitutiva, el juramento de nuevos socios y la celebración de nuestro primer aniversario, en la Sede de la Sociedad de Ferroviarios Jubilados y Montepiados de San Rosendo. Ese evento marcó el paso de club en formación a institución consolidada, con 19 socios activos comprometidos con el servicio. En julio de 2026 realizamos nuestra primera Ceremonia de Transmisión de Mando, cerrando el período leonístico 2025–2026 e iniciando el período 2026–2027 con una nueva directiva y la misma vocación de siempre.",
     "lions_internacional": "Lions Clubs International es la organización de clubes de servicio más grande del mundo, con más de 1,4 millones de socios distribuidos en 48.000 clubes que sirven a 200 países y áreas geográficas de todo el mundo. Fundada en 1917 con el lema 'Nosotros Servimos', su misión es demostrar que donde hay necesidad, hay un León. La Fundación Lions Clubs International (LCIF) ha concedido más de 1.100 millones de dólares para financiar proyectos humanitarios a nivel mundial.",
     "mision": "Desarrollar servicios comunitarios concretos que mejoren la calidad de vida de las personas en San Rosendo y su entorno, promoviendo el apoyo social directo, la prevención en salud, el trabajo colaborativo con la comunidad y la formación de una cultura de servicio.",
     "vision": "Ser el referente de servicio y cohesión comunitaria en San Rosendo, reconocido por la confianza de sus habitantes, la calidad de su trabajo y su capacidad de generar impacto real y sostenible en la Región del Biobío.",
     "valores": [
-      { "titulo": "Servicio", "descripcion": "Actuamos sin esperar nada a cambio. El servicio es nuestra razón de ser y la base de cada decisión que tomamos." },
-      { "titulo": "Compromiso", "descripcion": "Cumplimos lo que prometemos. Cada tarea importa y cada persona que servimos merece lo mejor de nosotros." },
-      { "titulo": "Solidaridad", "descripcion": "Nadie está solo cuando la comunidad se organiza. Respondemos juntos ante las necesidades de nuestra gente." },
-      { "titulo": "Transparencia", "descripcion": "Gestionamos con honestidad y rendimos cuentas. La confianza de la comunidad es nuestro activo más valioso." },
-      { "titulo": "Comunidad", "descripcion": "San Rosendo nos define. Servimos porque somos parte de aquí, y queremos que sea un lugar mejor para todos." }
+      {
+        "titulo": "Servicio",
+        "descripcion": "Actuamos sin esperar nada a cambio. El servicio es nuestra razón de ser y la base de cada decisión que tomamos."
+      },
+      {
+        "titulo": "Compromiso",
+        "descripcion": "Cumplimos lo que prometemos. Cada tarea importa y cada persona que servimos merece lo mejor de nosotros."
+      },
+      {
+        "titulo": "Solidaridad",
+        "descripcion": "Nadie está solo cuando la comunidad se organiza. Respondemos juntos ante las necesidades de nuestra gente."
+      },
+      {
+        "titulo": "Transparencia",
+        "descripcion": "Gestionamos con honestidad y rendimos cuentas. La confianza de la comunidad es nuestro activo más valioso."
+      },
+      {
+        "titulo": "Comunidad",
+        "descripcion": "San Rosendo nos define. Servimos porque somos parte de aquí, y queremos que sea un lugar mejor para todos."
+      }
     ]
   },
+  "directiva_periodo": {
+    "periodo": "2026–2027",
+    "presidente": "Oswin Hemmelmann Parra",
+    "asuncion": "Julio de 2026",
+    "nota": "Directiva vigente, electa en la Ceremonia de Transmisión de Mando de julio de 2026."
+  },
   "directiva": [
-    { "cargo": "Presidente", "nombre": "Óscar Pino Echeverría", "email": "oscar.pinoe@cmpc.com" },
-    { "cargo": "Vicepresidente", "nombre": "Manuel Vélez", "email": "manuel.v.urtubia@gmail.com" },
-    { "cargo": "Secretario", "nombre": "Oswin Hemmelmann Parra", "email": "oswin69@msn.com" },
-    { "cargo": "Tesorero", "nombre": "Francisco Arratia Cuevas", "email": "francisco.javier.arratia@gmail.com" },
-    { "cargo": "Asesor GST (Servicios)", "nombre": "Ricardo Rosales Garcés", "email": "ricardorosalesg@gmail.com" },
-    { "cargo": "Asesor GMT (Membresía)", "nombre": "Mario Ríos", "email": "marioriosm@gmail.com" },
-    { "cargo": "Asesor de Mercadotecnia", "nombre": "Rodrigo Burgos Cayuán", "email": "rodrigo.burgos.cayuan@gmail.com" },
-    { "cargo": "Domador", "nombre": "Rolando Burgos Melo", "email": "rolandoburgos@gmail.com" },
-    { "cargo": "Director", "nombre": "Wladimir Urra Inostroza", "email": "urrawladimir@gmail.com" },
-    { "cargo": "León Orientador", "nombre": "Leonardo Arroyo Beltrán", "email": "leoarroyoleones@gmail.com" }
+    {
+      "cargo": "Presidente",
+      "nombre": "Oswin Hemmelmann Parra",
+      "email": "club.leones.sanrosendo@gmail.com"
+    },
+    {
+      "cargo": "Secretario",
+      "nombre": "Pedro Humberto Leiva Conejeros",
+      "email": "club.leones.sanrosendo@gmail.com"
+    },
+    {
+      "cargo": "Tesorero",
+      "nombre": "Héctor Patricio Bahamondes Gallegos",
+      "email": "club.leones.sanrosendo@gmail.com"
+    },
+    {
+      "cargo": "Pasado Presidente",
+      "nombre": "Óscar Pino Echeverría",
+      "email": "club.leones.sanrosendo@gmail.com"
+    },
+    {
+      "cargo": "León Guía / Orientador",
+      "nombre": "Leonardo Arroyo Beltrán",
+      "email": "club.leones.sanrosendo@gmail.com"
+    }
+  ],
+  "directivas_historicas": [
+    {
+      "periodo": "2025–2026",
+      "titulo": "Primera Directiva del Club",
+      "presidente": "Óscar Pino Echeverría",
+      "descripcion": "Primera directiva del Club de Leones San Rosendo. Condujo al club desde su constitución hasta la obtención de la Carta Constitutiva (7 de marzo de 2026) y cerró el primer año leonístico completo con 2.386 personas servidas, 35 actividades reportadas y 156 horas de voluntariado.",
+      "hitos": [
+        "Constitución formal del club (3 de marzo de 2025, N° 181200)",
+        "Obtención de la personalidad jurídica",
+        "Ceremonia de Carta Constitutiva y 1er Aniversario (7 de marzo de 2026)",
+        "Puesta en marcha del programa permanente de salud comunitaria",
+        "Instalación de la plataforma digital del club (sitio web, tesorería y asistencia en línea)",
+        "Primera Cuenta de Gestión y Transmisión de Mando (julio de 2026)"
+      ],
+      "miembros": [
+        {
+          "cargo": "Presidente",
+          "nombre": "Óscar Pino Echeverría"
+        },
+        {
+          "cargo": "Vicepresidente",
+          "nombre": "Manuel Vélez Urtubia"
+        },
+        {
+          "cargo": "Secretario",
+          "nombre": "Oswin Hemmelmann Parra"
+        },
+        {
+          "cargo": "Tesorero",
+          "nombre": "Francisco Arratia Cuevas"
+        },
+        {
+          "cargo": "Asesor GST (Servicios)",
+          "nombre": "Ricardo Rosales Garcés"
+        },
+        {
+          "cargo": "Asesor GMT (Membresía)",
+          "nombre": "Mario Ríos"
+        },
+        {
+          "cargo": "Asesor de Mercadotecnia",
+          "nombre": "Rodrigo Burgos Cayuán"
+        },
+        {
+          "cargo": "Domador",
+          "nombre": "Rolando Burgos Melo"
+        },
+        {
+          "cargo": "Director",
+          "nombre": "Wladimir Urra Inostroza"
+        },
+        {
+          "cargo": "León Guía / Orientador",
+          "nombre": "Leonardo Arroyo Beltrán"
+        }
+      ]
+    }
   ],
   "socios": [
-    { "nombre": "Arratia Cuevas, Francisco", "tipo": "Socio Fundador" },
-    { "nombre": "Bahamondes Gallegos, Héctor Patricio", "tipo": "Socio Fundador" },
-    { "nombre": "Burgos Cayuán, Rodrigo", "tipo": "Socio Fundador" },
-    { "nombre": "Burgos Melo, Rolando", "tipo": "Socio Fundador" },
-    { "nombre": "Hemmelmann Parra, Oswin", "tipo": "Socio Fundador" },
-    { "nombre": "Jara Silva, José", "tipo": "Socio Fundador" },
-    { "nombre": "Leiva Conejeros, Pedro", "tipo": "Socio Fundador" },
-    { "nombre": "Luna Ferrada, Jaime Alexis", "tipo": "Socio Regular" },
-    { "nombre": "Martínez, Branco", "tipo": "Socio Fundador" },
-    { "nombre": "Moreira Henríquez, Ricardo", "tipo": "Socio Fundador" },
-    { "nombre": "Oporto Torres, Efraín", "tipo": "Socio Fundador" },
-    { "nombre": "Pino Echeverría, Juan José", "tipo": "Socio Fundador" },
-    { "nombre": "Pino Echeverría, Óscar", "tipo": "Socio Fundador" },
-    { "nombre": "Pino Muñoz, Juan", "tipo": "Socio Fundador" },
-    { "nombre": "Quintana Inostroza, Roberto Elías", "tipo": "Socio Regular" },
-    { "nombre": "Ríos, Mario", "tipo": "Socio Fundador" },
-    { "nombre": "Rosales Garcés, Ricardo", "tipo": "Socio Fundador" },
-    { "nombre": "Urra Inostroza, Wladimir", "tipo": "Socio Fundador" },
-    { "nombre": "Vélez, Manuel", "tipo": "Socio Fundador" }
+    {
+      "nombre": "Arratia Cuevas, Francisco",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Bahamondes Gallegos, Héctor Patricio",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Burgos Cayuán, Rodrigo",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Burgos Melo, Rolando",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Hemmelmann Parra, Oswin",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Jara Silva, José",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Leiva Conejeros, Pedro Humberto",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Luna Ferrada, Jaime Alexis",
+      "tipo": "Socio Regular"
+    },
+    {
+      "nombre": "Martínez, Branco",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Moreira Henríquez, Ricardo",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Oporto Torres, Efraín",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Pino Echeverría, Juan José",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Pino Echeverría, Óscar",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Pino Muñoz, Juan",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Quintana Inostroza, Roberto Elías",
+      "tipo": "Socio Regular"
+    },
+    {
+      "nombre": "Ríos, Mario",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Rosales Garcés, Ricardo",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Urra Inostroza, Wladimir",
+      "tipo": "Socio Fundador"
+    },
+    {
+      "nombre": "Vélez Urtubia, Manuel",
+      "tipo": "Socio Fundador"
+    }
   ],
   "servicios": [
     {
       "id": 1,
-      "titulo": "Operativos de Salud Comunitaria",
+      "titulo": "Salud Comunitaria",
       "icono": "🩺",
-      "descripcion": "Realizamos controles de presión arterial, glicemia y otras atenciones preventivas en terreno, llevando salud gratuita directamente a quienes más lo necesitan.",
-      "detalle": "Hemos ejecutado operativos en la Sede de Jubilados de San Rosendo y la Plaza de Armas, incluyendo servicios de mamografías. En Laja realizamos un multiservicio con +53 atenciones, 9 profesionales de salud y apoyo de transporte municipal."
+      "descripcion": "Nuestro programa insignia. Jornadas permanentes de toma de presión arterial y glicemia, gratuitas y en terreno, llevando prevención directamente a quienes más lo necesitan.",
+      "detalle": "En el período 2025–2026 realizamos 7 jornadas con 259 atenciones. Siete socios del club recibieron capacitación oficial del CESFAM San Rosendo para ejecutar estos controles con estándar técnico."
     },
     {
       "id": 2,
       "titulo": "Multiservicio en Terreno",
       "icono": "🏥",
-      "descripcion": "Coordinamos operativos de amplio alcance con equipos multidisciplinarios, centros médicos y apoyo logístico municipal para ampliar cobertura en zonas con menor acceso.",
-      "detalle": "El multiservicio realizado en Laja es un ejemplo de nuestra capacidad de coordinación: +53 atenciones, participación de más de 9 profesionales de la salud y transporte urbano y rural coordinado con el municipio."
+      "descripcion": "Operativos de amplio alcance con equipos multidisciplinarios, centros médicos y apoyo logístico municipal, para ampliar cobertura en zonas con menor acceso a la salud.",
+      "detalle": "El multiservicio médico coordinado con el Club de Leones de Laja alcanzó 228 personas beneficiadas, con participación de profesionales de la salud y transporte urbano y rural coordinado con el municipio."
     },
     {
       "id": 3,
-      "titulo": "Campañas Sociales",
+      "titulo": "Apoyo Comunitario y Respuesta Social",
       "icono": "🤝",
-      "descripcion": "Organizamos campañas de apoyo directo a los sectores más vulnerables de la comunidad, con foco en impacto real y sostenible.",
-      "detalle": "Respondemos con rapidez y organización ante las necesidades de nuestra comunidad, desde apoyo en situaciones de emergencia hasta actividades culturales y cívicas."
+      "descripcion": "Respondemos con rapidez ante las necesidades de nuestra comunidad: apoyo a instituciones, ayuda social domiciliaria y reconocimiento a quienes sirven a San Rosendo.",
+      "detalle": "Incluye el apoyo al Cuerpo de Bomberos (500 personas beneficiadas), ayuda social domiciliaria, visita a la Subcomisaría de Carabineros y reconocimiento a los equipos de salud locales."
     },
     {
       "id": 4,
+      "titulo": "Educación y Juventud",
+      "icono": "🎓",
+      "descripcion": "Apoyamos a estudiantes de San Rosendo con estímulos, reconocimientos académicos y acompañamiento, porque el futuro de la comuna se construye desde las aulas.",
+      "detalle": "Durante el período se entregaron estímulos y reconocimientos a estudiantes destacados de la comuna, además de apoyo integral a familias con estudiantes en el sistema escolar."
+    },
+    {
+      "id": 5,
       "titulo": "Autofinanciamiento Solidario",
       "icono": "🎟️",
       "descripcion": "Organizamos rifas y actividades de financiamiento propio para sostener nuestras labores comunitarias con independencia y transparencia.",
-      "detalle": "Hemos gestionado más de 15 rifas en nuestro primer año leonístico, con control transparente de premios y resultados. Este modelo autosostenible financia directamente los servicios a la comunidad."
+      "detalle": "Este modelo autosostenible financia directamente los servicios a la comunidad, con control transparente de premios, sorteos y rendición de resultados ante los socios y el Distrito T-3."
+    },
+    {
+      "id": 6,
+      "titulo": "Compromiso con LCIF",
+      "icono": "🌍",
+      "descripcion": "Aportamos a la Fundación Lions Clubs International (LCIF), que financia proyectos humanitarios de gran escala en todo el mundo.",
+      "detalle": "En el período 2025–2026 el club donó US$ 509 a LCIF, sumándose al esfuerzo global del leonismo por combatir la ceguera, el hambre, la diabetes y los desastres naturales."
     }
   ],
   "actividades": [
     {
       "id": 1,
-      "titulo": "Multiservicio de Salud en Laja",
-      "fecha": "2025",
-      "lugar": "Laja, Región del Biobío",
-      "descripcion": "+53 atenciones realizadas en coordinación con centro médico. Participación de 9 profesionales de la salud y apoyo logístico municipal con transporte urbano y rural.",
+      "titulo": "Ceremonia de Transmisión de Mando 2026",
+      "fecha": "Julio de 2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "Cierre del período leonístico 2025–2026 y asunción de la nueva directiva 2026–2027, encabezada por el León Oswin Hemmelmann Parra, con la presencia del Gobernador del Distrito T-3 Chile Sur y autoridades comunales.",
       "estado": "realizado",
       "imagen": "",
-      "categoria": "salud"
+      "categoria": "institucional"
     },
     {
       "id": 2,
-      "titulo": "Operativo de Salud – Sede Jubilados",
-      "fecha": "2025",
-      "lugar": "Sede Sociedad de Jubilados, San Rosendo",
-      "descripcion": "Control de presión arterial y glicemia gratuito para la comunidad en la Sede de la Sociedad de Jubilados de San Rosendo.",
+      "titulo": "Ceremonia de Carta Constitutiva y 1er Aniversario",
+      "fecha": "7 de marzo de 2026",
+      "lugar": "Sede Sociedad de Ferroviarios Jubilados y Montepiados, San Rosendo",
+      "descripcion": "Evento institucional con entrega de la Carta Constitutiva, juramento de nuevos socios y celebración del primer aniversario del club, con protocolo leonístico completo.",
       "estado": "realizado",
       "imagen": "",
-      "categoria": "salud"
+      "categoria": "institucional"
     },
     {
       "id": 3,
-      "titulo": "Operativo de Salud con Mamografías – Plaza de Armas",
-      "fecha": "2025",
-      "lugar": "Plaza de Armas, San Rosendo",
-      "descripcion": "Operativo de salud preventiva en Plaza de Armas con servicio de mamografías abierto a la comunidad.",
+      "titulo": "Programa de Salud: presión arterial y glicemia",
+      "fecha": "Período 2025–2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "7 jornadas de control gratuito de presión arterial y glicemia, con 259 atenciones realizadas a la comunidad. Programa permanente del club.",
       "estado": "realizado",
       "imagen": "",
       "categoria": "salud"
     },
     {
       "id": 4,
-      "titulo": "Ceremonia: Carta Constitutiva y 1er Aniversario",
-      "fecha": "7 de marzo de 2026",
-      "lugar": "Sede Sociedad de Ferroviarios Jubilados y Montepiados, San Rosendo",
-      "descripcion": "Evento institucional con entrega de Carta Constitutiva, juramento de nuevos socios y celebración del primer aniversario del club, con protocolo leonístico completo.",
+      "titulo": "Capacitación CESFAM a socios del club",
+      "fecha": "Período 2025–2026",
+      "lugar": "CESFAM San Rosendo",
+      "descripcion": "Siete socios del club recibieron capacitación oficial del CESFAM San Rosendo para la ejecución técnica de controles de presión arterial y glicemia en terreno.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "salud"
+    },
+    {
+      "id": 5,
+      "titulo": "Multiservicio Médico con Club de Leones de Laja",
+      "fecha": "Período 2025–2026",
+      "lugar": "Laja, Región del Biobío",
+      "descripcion": "Operativo multiservicio en coordinación con centro médico y el Club de Leones de Laja, con 228 personas beneficiadas, profesionales de la salud y apoyo logístico municipal con transporte urbano y rural.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "salud"
+    },
+    {
+      "id": 6,
+      "titulo": "Apoyo al Cuerpo de Bomberos de San Rosendo",
+      "fecha": "Período 2025–2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "Actividad de apoyo al Cuerpo de Bomberos de la comuna, con 500 personas beneficiadas de forma directa e indirecta.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "social"
+    },
+    {
+      "id": 7,
+      "titulo": "Entrega de entradas al circo para la comunidad",
+      "fecha": "Período 2025–2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "Actividad comunitaria masiva con entrega de 1.000 entradas al circo, permitiendo el acceso de familias de San Rosendo a un espacio de recreación y encuentro.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "social"
+    },
+    {
+      "id": 8,
+      "titulo": "Reconocimiento a estudiante destacada",
+      "fecha": "Período 2025–2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "Entrega de estímulos y reconocimiento académico a estudiante destacada de la comuna, como parte del programa de apoyo a la educación y la juventud.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "social"
+    },
+    {
+      "id": 9,
+      "titulo": "Ayuda social domiciliaria",
+      "fecha": "Período 2025–2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "Visitas y entrega de apoyo directo en domicilios de familias en situación de vulnerabilidad de la comuna.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "social"
+    },
+    {
+      "id": 10,
+      "titulo": "Reconocimiento a equipos de salud y visita a Carabineros",
+      "fecha": "Período 2025–2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "Reconocimiento público a los equipos de salud de la comuna y visita institucional a la Subcomisaría de Carabineros de San Rosendo, fortaleciendo el vínculo con las instituciones locales.",
       "estado": "realizado",
       "imagen": "",
       "categoria": "institucional"
     },
     {
-      "id": 5,
-      "titulo": "Rifas Solidarias de Autofinanciamiento",
-      "fecha": "2025–2026",
-      "lugar": "San Rosendo",
-      "descripcion": "Organización de más de 15 rifas para financiar actividades comunitarias, con gestión transparente de premios, sorteos y rendición de resultados.",
+      "id": 11,
+      "titulo": "Donación del club a LCIF",
+      "fecha": "Período 2025–2026",
+      "lugar": "Lions Clubs International Foundation",
+      "descripcion": "El club aportó US$ 509 a la Fundación Lions Clubs International (LCIF), contribuyendo al financiamiento de proyectos humanitarios de alcance mundial.",
       "estado": "realizado",
       "imagen": "",
       "categoria": "financiamiento"
-    }
-  ],
-  "proximas_actividades": [
+    },
     {
-      "id": 1,
-      "titulo": "[COMPLETAR PRÓXIMA ACTIVIDAD]",
-      "fecha": "[COMPLETAR FECHA]",
-      "lugar": "[COMPLETAR LUGAR]",
-      "estado": "programado"
+      "id": 12,
+      "titulo": "Rifas Solidarias de Autofinanciamiento",
+      "fecha": "Período 2025–2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "Organización de rifas solidarias para financiar actividades comunitarias, con gestión transparente de premios, sorteos y rendición de resultados.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "financiamiento"
+    },
+    {
+      "id": 13,
+      "titulo": "Difusión en radio local y comunicación comunitaria",
+      "fecha": "Período 2025–2026",
+      "lugar": "San Rosendo, Región del Biobío",
+      "descripcion": "Presencia en radio local y despliegue de canales digitales del club (sitio web, Facebook, Instagram y YouTube) para informar a la comunidad sobre nuestras actividades.",
+      "estado": "realizado",
+      "imagen": "",
+      "categoria": "institucional"
     }
   ],
+  "proximas_actividades": [],
   "gestion": {
     "anio": "2025–2026",
     "socios_activos": "19",
-    "servicios_realizados": "+3",
-    "personas_beneficiadas": "1.293",
-    "actividades_anuales": "+15",
-    "resumen": "El Club de Leones San Rosendo, constituido el 3 de marzo de 2025 (N° 181200), culmina su primer año leonístico con resultados concretos y una base institucional sólida. Con 19 socios activos —16 fundadores, 2 regulares y 1 reincorporado— el club realizó más de 3 operativos de salud beneficiando a 1.293 personas, gestionó más de 15 rifas de autofinanciamiento, y celebró la Ceremonia de Carta Constitutiva el 7 de marzo de 2026. Los fondos gestionados alcanzaron $1.550 donados y $1.090 recaudados.",
-    "proyeccion": "Para el período 2026–2027, el club proyecta expandir la cobertura de sus operativos de salud, consolidar alianzas con el CESFAM local y organizaciones municipales, aumentar el número de socios activos y explorar el acceso a fondos de la Lions Clubs International Foundation (LCIF) para iniciativas de mayor impacto regional.",
+    "servicios_realizados": "27",
+    "personas_beneficiadas": "2.386",
+    "actividades_anuales": "35",
+    "resumen": "El Club de Leones San Rosendo, constituido el 3 de marzo de 2025 (N° 181200), cierra su primer año leonístico completo con resultados concretos y una base institucional sólida. Con 19 socios activos, el club reportó 35 actividades, ejecutó 27 acciones de servicio y donaciones, sirvió a 2.386 personas de San Rosendo y sus alrededores, y acumuló 156 horas de voluntariado. En salud, nuestro programa insignia, realizamos 7 jornadas de control de presión arterial y glicemia con 259 atenciones, con 7 socios capacitados oficialmente por el CESFAM San Rosendo. Además, el club donó US$ 509 a la Fundación Lions Clubs International (LCIF). Estas cifras corresponden al reporte oficial de actividades ante Lions Clubs International, período 2025–2026.",
+    "proyeccion": "Para el período 2026–2027, bajo la presidencia del León Oswin Hemmelmann Parra, el club se ha fijado cuatro desafíos: (1) crecer en socios, incorporando nuevos miembros para ampliar la capacidad de servicio; (2) consolidar el programa de salud, manteniendo las jornadas de presión y glicemia con un calendario anual definido; (3) fortalecer las causas de visión y hambre, aumentando el alcance de los operativos oftalmológicos y las entregas de alimentos; y (4) sostener el compromiso con LCIF, continuando la senda de crecimiento en donaciones internacionales y explorando el acceso a subvenciones para proyectos de mayor impacto regional.",
     "actividades_clave": [
       "Constitución formal del club el 3 de marzo de 2025 (N° 181200)",
-      "Multiservicio de salud en Laja: +53 atenciones con 9 profesionales",
-      "Operativo con mamografías en Plaza de Armas de San Rosendo",
-      "Ceremonia de Carta Constitutiva y 1er Aniversario (7 marzo 2026)",
-      "Más de 15 rifas solidarias para autofinanciamiento comunitario"
+      "Ceremonia de Carta Constitutiva y 1er Aniversario (7 de marzo de 2026)",
+      "Programa de salud: 7 jornadas con 259 atenciones y 7 socios capacitados por CESFAM",
+      "Multiservicio médico junto al Club de Leones de Laja: 228 personas beneficiadas",
+      "Apoyo al Cuerpo de Bomberos de San Rosendo: 500 personas beneficiadas",
+      "Entrega de 1.000 entradas al circo para familias de la comuna",
+      "Donación de US$ 509 a la Fundación Lions Clubs International (LCIF)",
+      "Primera Ceremonia de Transmisión de Mando (julio de 2026)"
     ]
   },
   "donaciones": {
@@ -171,13 +411,25 @@
     "numero_cuenta": "54970273886",
     "rut": "65.257.884-5",
     "nombre_titular": "Club De Leones San Rosendo",
-    "responsable": "Francisco Arratia Cuevas (Tesorero)",
-    "texto_confianza": "El Club de Leones San Rosendo es una organización sin fines de lucro con personalidad jurídica vigente desde 2025 (N° de club 181200), parte de Lions Clubs International Distrito T-3. Todos los aportes recibidos son gestionados con total transparencia por nuestro Tesorero y destinados exclusivamente a financiar actividades comunitarias. Rendimos cuentas a nuestros socios, al Distrito T-3 y a la comunidad. Ante cualquier consulta escribanos a club.leones.sanrosendo@gmail.com."
+    "responsable": "Héctor Patricio Bahamondes Gallegos (Tesorero)",
+    "texto_confianza": "El Club de Leones San Rosendo es una organización sin fines de lucro con personalidad jurídica vigente desde 2025 (N° de club 181200), parte de Lions Clubs International Distrito T-3 Chile Sur. Todos los aportes recibidos son gestionados con total transparencia por nuestro Tesorero y destinados exclusivamente a financiar actividades comunitarias. Rendimos cuentas a nuestros socios, al Distrito T-3 y a la comunidad. Ante cualquier consulta escríbanos a club.leones.sanrosendo@gmail.com."
   },
   "galeria_categorias": [
-    { "id": "salud", "nombre": "Operativos de Salud" },
-    { "id": "social", "nombre": "Campañas Sociales" },
-    { "id": "institucional", "nombre": "Actos Institucionales" },
-    { "id": "comunidad", "nombre": "Vida Comunitaria" }
+    {
+      "id": "salud",
+      "nombre": "Operativos de Salud"
+    },
+    {
+      "id": "social",
+      "nombre": "Campañas Sociales"
+    },
+    {
+      "id": "institucional",
+      "nombre": "Actos Institucionales"
+    },
+    {
+      "id": "comunidad",
+      "nombre": "Vida Comunitaria"
+    }
   ]
 }
