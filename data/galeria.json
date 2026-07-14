@@ -1,22 +1,50 @@
-[
+
   {
     "id": 1,
-    "archivo": "img/galeria/ejemplo-operativo.jpg",
-    "titulo": "Operativo de Salud",
-    "descripcion": "Control de presión arterial en terreno",
+    "archivo": "img/galeria/2025-2026/institucional-carta-constitutiva-01.jpg",
+    "titulo": "Ceremonia de Carta Constitutiva",
+    "descripcion": "Entrega de la Carta Constitutiva y celebración del primer aniversario del club.",
+    "categoria": "institucional",
+    "fecha": "7 de marzo de 2026"
+  },
+  {
+    "id": 2,
+    "archivo": "img/galeria/2025-2026/salud-jornada-presion-glicemia-01.jpg",
+    "titulo": "Jornada de presión arterial y glicemia",
+    "descripcion": "Control preventivo gratuito para la comunidad de San Rosendo.",
     "categoria": "salud",
-    "fecha": "[COMPLETAR FECHA]"
+    "fecha": "Período 2025-2026"
+  },
+  {
+    "id": 3,
+    "archivo": "img/galeria/2025-2026/salud-multiservicio-laja-01.jpg",
+    "titulo": "Multiservicio médico en Laja",
+    "descripcion": "Operativo junto al Club de Leones de Laja. 228 personas beneficiadas.",
+    "categoria": "salud",
+    "fecha": "Período 2025-2026"
+  },
+  {
+    "id": 4,
+    "archivo": "img/galeria/2025-2026/social-apoyo-bomberos-01.jpg",
+    "titulo": "Apoyo al Cuerpo de Bomberos",
+    "descripcion": "Actividad de apoyo a Bomberos de San Rosendo. 500 personas beneficiadas.",
+    "categoria": "social",
+    "fecha": "Período 2025-2026"
+  },
+  {
+    "id": 5,
+    "archivo": "img/galeria/2025-2026/comunidad-asamblea-club-01.jpg",
+    "titulo": "Asamblea del club",
+    "descripcion": "Reunión de socias y socios del Club de Leones San Rosendo.",
+    "categoria": "comunidad",
+    "fecha": "Período 2025-2026"
+  },
+  {
+    "id": 6,
+    "archivo": "img/galeria/2026-2027/institucional-transmision-mando-01.jpg",
+    "titulo": "Ceremonia de Transmisión de Mando",
+    "descripcion": "Asunción de la directiva 2026-2027, presidida por el León Oswin Hemmelmann Parra.",
+    "categoria": "institucional",
+    "fecha": "Julio de 2026"
   }
 ]
-,
-{
-  "id": 6,
-  "titulo": "1er Aniversario del Club de Leones San Rosendo",
-  "fecha": "3 de marzo de 2026",
-  "lugar": "Sede Sociedad de Jubilados, San Rosendo",
-  "descripcion": "Resumen de los servicios y actividades desarrolladas durante el primer año leonístico 2025–2026.",
-  "estado": "realizado",
-  "imagen": "",
-  "video": "https://www.youtube.com/embed/ECgreqP_tas",
-  "categoria": "institucional"
-}
